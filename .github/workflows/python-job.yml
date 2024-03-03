@@ -1,0 +1,21 @@
+name: Python Job
+
+on:
+  schedule:
+    - cron: '*/10 * * * *' # 每十分钟运行一次
+
+jobs:
+  run-python:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+
+    - name: Run Python script
+      run: python py/hello.py
