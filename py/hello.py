@@ -1,2 +1,2 @@
 with open('1.txt','w+') as f:
-    f.write('ÎÒÊÇÊä³öÄÚÈİ')
+    f.write("ä½ å¥½ï¼Œä¸–ç•Œ")
