@@ -21,5 +21,5 @@ jobs:
       run: python py/hello.py
 
     - name: Display output
-      run: cat path/to/your/output-file.txt  # 替换为实际的输出文件路径
+      run: output-file.txt  # 替换为实际的输出文件路径
 
