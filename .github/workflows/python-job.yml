@@ -2,7 +2,7 @@ name: Python Job
 
 on:
   schedule:
-    - cron: '*/10 * * * *' # Ã¿Ê®·ÖÖÓÔËĞĞÒ»´Î
+    - cron: '*/5 * * * *' # æ¯ååˆ†é’Ÿè¿è¡Œä¸€æ¬¡
 
 jobs:
   run-python:
@@ -21,5 +21,5 @@ jobs:
       run: python py/hello.py
 
     - name: Display output
-      run: output-file.txt  # Ìæ»»ÎªÊµ¼ÊµÄÊä³öÎÄ¼şÂ·¾¶
+      run: output-file.txt  # æ›¿æ¢ä¸ºå®é™…çš„è¾“å‡ºæ–‡ä»¶è·¯å¾„
 
