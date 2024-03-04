@@ -18,8 +18,4 @@ jobs:
         python-version: 3.8
 
     - name: Run Python script
-      run: python py/a.py
-
-    # - name: Display output
-    #   run: output-file.txt  # 替换为实际的输出文件路径
-
+      run: python py/hello.py
