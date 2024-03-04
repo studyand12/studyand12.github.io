@@ -17,9 +17,8 @@ jobs:
       with:
         python-version: 3.8
 
-    - name: Run Python script
-      run: python py/a.py
+    - name: Run Python script and capture output
+      run: python py/hello.py > output-file.txt
 
     - name: Display output
-      run: output-file.txt  # 替换为实际的输出文件路径
-
+      run: cat output-file.txt
