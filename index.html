@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		<title>信息搜索</title>
+		<link rel="stylesheet" href="styles.css">
+		 <link
+		    rel="stylesheet"
+		    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		  />
+	</head>
+	<body>
+		<div class="container">
+			<!-- <h1>输入公司名称</h1> -->
+			<div class="row g-3 justify-content-center">
+				<div class="col-4">
+					<div class="input-group">
+						<span class="input-group-text">公司名称</span>
+						<input type="text" id="search-box" class="form-control" aria-describedby="search-button" placeholder="华北理工大学轻工学院" aria-label="华北理工大学轻工学院">
+						<button class="btn btn-primary" type="button" id="search-button"><svg
+							t="1729345939457" class="icon" viewBox="0 0 1024 1024" version="1.1"
+							xmlns="http://www.w3.org/2000/svg" p-id="1461" width="32" height="32">
+							<path
+								d="M446.112323 177.545051c137.567677 0.219798 252.612525 104.59798 266.162424 241.493333 13.562828 136.895354-78.778182 261.818182-213.617777 289.008485-134.852525 27.203232-268.386263-52.156768-308.945455-183.608889s25.018182-272.252121 151.738182-325.779394A267.235556 267.235556 0 0 1 446.112323 177.545051m0-62.060607c-182.794343 0-330.989899 148.195556-330.989899 330.989899s148.195556 330.989899 330.989899 330.989899 330.989899-148.195556 330.989899-330.989899-148.195556-330.989899-330.989899-330.989899z m431.321212 793.341415a30.849293 30.849293 0 0 1-21.94101-9.102223l-157.220202-157.220202c-11.752727-12.179394-11.584646-31.534545 0.37495-43.50707 11.972525-11.972525 31.327677-12.140606 43.494141-0.37495l157.220202 157.220202a31.036768 31.036768 0 0 1 6.723232 33.810101 31.004444 31.004444 0 0 1-28.651313 19.174142z m0 0"
+								p-id="1462" fill="#ffffff"></path>
+						</svg></button>
+					</div>
+				</div>
+				<!-- <div class="col-auto"><button id="search-button" class="btn btn-primary" style="height: 100%;"></button></div> -->
+			</div>
+
+			<div id="student-modal" class="modal animate__backInUp">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<h2 id="student-modal-title">学生信息</h2>
+					<table id="student-table" class="table table-striped table-hover">
+						<thead>
+							<tr>
+								<th>学生姓名</th>
+								<th>公司名称</th>
+							</tr>
+						</thead>
+						<tbody>
+							<!-- 表格主体 -->
+						</tbody>
+					</table>
+
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+		</script>
+		<script src="script.js"></script>
+	</body>
+</html>
